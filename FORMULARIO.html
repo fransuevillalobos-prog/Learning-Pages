@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Inscripción a Visorias - Real Madrid</title>
+</head>
+<body>
+    <section>
+        <article><h1>FORMULARIO DE INSCRIPCIÓN A VISORIAS</h1></article>
+        <article>
+            <fieldset>
+                <legend><h2>Datos Personales</h2></legend>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <label>Nombre completo:</label><br>
+                    <input type="text" name="nombre" required><br><br>
+                    <label>Correo electrónico:</label><br>
+                    <input type="email" name="correo" required><br><br>
+                    <label>Fecha de nacimiento:</label><br>
+                    <input type="date" name="fecha" required><br><br>
+                    <label>País:</label><br>
+                    <input type="text" name="pais" required><br><br>
+                    <label>Idiomas que hablas:</label><br>
+                    <input type="checkbox" name="idiomas" value="español"> Español
+                    <input type="checkbox" name="idiomas" value="inglés"> Inglés
+                    <input type="checkbox" name="idiomas" value="francés"> Francés
+                    <input type="checkbox" name="idiomas" value="otro"> Otro<br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend><h2>Datos Deportivos</h2></legend>
+                    <label>Posición principal:</label><br>
+                    <select name="posicion" required>
+                        <option value="">-- Selecciona --</option>
+                        <option value="portero">Portero</option>
+                        <option value="defensa">Defensa</option>
+                        <option value="medio">Mediocampista</option>
+                        <option value="delantero">Delantero</option>
+                    </select><br><br>
+                    <label>Pierna dominante:</label><br>
+                    <input type="radio" name="pierna" value="derecha"> Derecha
+                    <input type="radio" name="pierna" value="izquierda"> Izquierda
+                    <input type="radio" name="pierna" value="ambas"> Ambas<br><br>
+                    <label>Años de experiencia en fútbol:</label><br>
+                    <input type="number" name="experiencia" min="0" max="50"> años<br><br>
+                    <label>Club actual (si aplica):</label><br>
+                    <input type="text" name="club"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend><h2>Archivos y Material</h2></legend>
+                    <label>Foto tipo pasaporte:</label><br>
+                    <input type="file" name="foto" accept="image/*" required><br><br>
+                    <label>Video de habilidades (3-5 min):</label><br>
+                    <input type="file" name="video" accept="video/*"><br><br>
+                    <label>Documento deportivo o académico (opcional):</label><br>
+                    <input type="file" name="documento" accept=".pdf,.jpg,.png"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend><h2>Comentarios Finales</h2></legend>
+                    <label>Motivación para unirte al Real Madrid:</label><br>
+                    <textarea name="motivacion" rows="5" cols="70" placeholder="Escribe aquí por qué quieres pertenecer al club."></textarea><br><br>
+                </fieldset>
+
+                <button type="submit">Enviar inscripción</button>
+            </form>
+        </article>
+    </section>
+</body>
+</html>
